@@ -1,15 +1,17 @@
 import java.util.Scanner;
 
-public class Series_of_number {
+public class Simple_Array_Sum {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
-		double sum=(double)0.0;
-		for(int i=1;i<=n;i++)
+		int a[]=new int[n];
+		int sum=0;
+		for(int i=0;i<n;i++)
 		{
-			sum=sum+1.0/i;
+			a[i]=sc.nextInt();
+			sum=sum+a[i];
 		}
 		System.out.println(sum);
 	}

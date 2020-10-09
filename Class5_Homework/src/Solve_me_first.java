@@ -1,16 +1,14 @@
 import java.util.Scanner;
 
-public class Series_of_number {
+public class Solve_me_first {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc=new Scanner(System.in);
-		int n=sc.nextInt();
-		double sum=(double)0.0;
-		for(int i=1;i<=n;i++)
-		{
-			sum=sum+1.0/i;
-		}
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		int sum;
+		sum=a+b;
 		System.out.println(sum);
 	}
 

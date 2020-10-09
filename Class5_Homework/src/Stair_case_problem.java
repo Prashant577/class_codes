@@ -1,17 +1,25 @@
 import java.util.Scanner;
 
-public class Series_of_number {
+public class Stair_case_problem {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
-		double sum=(double)0.0;
 		for(int i=1;i<=n;i++)
 		{
-			sum=sum+1.0/i;
+			for(int j=1;j<=n-i;j++)
+			{
+				System.out.print(" ");
+			}
+			for(int k=1;k<=i;k++)
+			{
+				System.out.print("#");
+			}
+			System.out.println();
 		}
-		System.out.println(sum);
+		
+		
 	}
 
 }

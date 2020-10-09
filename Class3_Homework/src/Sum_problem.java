@@ -15,8 +15,9 @@ public class Sum_problem {
 			System.out.println(sum);
 			System.out.println("do you further operation");
 			again=sc.nextInt();
-			
-		}while(again==1 || again==0);
+			a=sc.nextInt();
+			b=sc.nextInt();
+		}while(again==1);
 		
 			
 	}
