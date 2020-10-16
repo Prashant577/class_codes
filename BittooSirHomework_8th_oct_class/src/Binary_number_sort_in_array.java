@@ -1,41 +1,39 @@
 import java.util.Scanner;
 
-public class Birthday_cake_candle {
+public class Binary_number_sort_in_array {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc=new Scanner(System.in);
 		int n=sc.nextInt();
 		int a[]=new int[n];
-		int count=0;
-		int max;
-		
+		int temp;
 		for(int i=0;i<n;i++)
-			{
+		{
 			a[i]=sc.nextInt();
-			
 		}
-		max=a[0];
-		
-		for(int i=1;i<n;i++)
+		int l=0;
+		int r=n-1;
+		while(l<r)
 		{
-			
-			
-			
-			if(a[i]>max)
+			while(a[l]==0)
 			{
-				max=a[i];
-				
+				l++;
 			}
+			while(a[r]==1)
+			{
+				r--;
+			}
+			temp=a[l];
+			a[l]=a[r];
+			a[r]=temp;
+			l++;
+			r--;
 		}
-		for(int i=0;i<n;i++) 
+		for(int i=0;i<n;i++)
 		{
-			if(a[i]==max)
-			{
-				count++;
-			}
+			System.out.print(a[i]);
 		}
-		System.out.println(count);
 	}
 
 }

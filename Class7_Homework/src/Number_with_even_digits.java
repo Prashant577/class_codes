@@ -1,41 +1,35 @@
 import java.util.Scanner;
 
-public class Birthday_cake_candle {
+public class Number_with_even_digits {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner sc=new Scanner(System.in);
+		
+		
+		int sum=0;
 		int n=sc.nextInt();
 		int a[]=new int[n];
-		int count=0;
-		int max;
-		
 		for(int i=0;i<n;i++)
-			{
+		{
 			a[i]=sc.nextInt();
 			
-		}
-		max=a[0];
+		int count=0;
+		while(a[i]!=0)
+		{
 		
-		for(int i=1;i<n;i++)
+			a[i]/=10;
+			
+			count=count+1;
+			
+		  }
+		
+		if(count%2==0)
 		{
-			
-			
-			
-			if(a[i]>max)
-			{
-				max=a[i];
-				
-			}
+			sum++;
 		}
-		for(int i=0;i<n;i++) 
-		{
-			if(a[i]==max)
-			{
-				count++;
-			}
 		}
-		System.out.println(count);
+	System.out.println(sum);	
 	}
 
 }

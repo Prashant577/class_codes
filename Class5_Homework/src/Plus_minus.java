@@ -27,9 +27,9 @@ public class Plus_minus {
 				zero++;
 			}
 		}
-		System.out.println(positive/n);
-		System.out.println(negetive/n);
-		System.out.println(zero/n);
+		System.out.println(String.format("%.6f",positive/n));
+		System.out.println(String.format("%.6f",negetive/n));
+		System.out.println(String.format("%.6f",zero/n));
 		
 	}
 
