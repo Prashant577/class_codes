@@ -1,0 +1,21 @@
+public String minCat(String a, String b) {
+  boolean aShort=false;
+  int diff=0;
+  if(a.length()<b.length())
+  {
+    aShort=true;
+    diff=b.length()-a.length();
+  }
+  else
+  {
+    diff=a.length()-b.length();
+  }
+  if(aShort==true)
+  {
+    return a+b.substring(diff);
+  }
+  else
+  {
+    return a.substring(diff)+b;
+  }
+}

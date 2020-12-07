@@ -1,0 +1,12 @@
+public String conCat(String a, String b) {
+  int x=a.length();
+  int y=b.length();
+  if(x>=1 && y>=1)
+  {
+    if(a.charAt(x-1)==b.charAt(0))
+    {
+      return a+b.substring(1);
+    }
+  }
+  return a+b;
+}

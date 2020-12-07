@@ -4,7 +4,7 @@ public class Mobile_character_using_number {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		System.out.println(getkpc("243"));
+		System.out.println(getkpc("23"));
 	}
 	public static ArrayList<String> getkpc(String str)
 	{
@@ -23,7 +23,7 @@ public class Mobile_character_using_number {
 		{
 			for(int i=0;i<mc.length();i++)
 			{
-				mr.add(mc.charAt(i)+s);
+				mr.add(mc.charAt(i) + s);
 			}
 		}
 		return mr;
@@ -34,21 +34,37 @@ public class Mobile_character_using_number {
 		{
 			return "abc";
 		}
-		if(key==3)
+		if(key=='3')
 		{
 			return "def";
 		}
-		if(key==4)
+		if(key=='4')
 		{
 			return "ghi";
 		}
-		if(key==5)
+		if(key=='5')
 		{
 			return "jkl";
 		}
-		if(key==6)
+		if(key=='6')
 		{
 			return "mno";
+		}
+		if(key=='7')
+		{
+			return "pqr";
+		}
+		if(key=='8')
+		{
+			return "stu";
+		}
+		if(key=='9')
+		{
+			return "vxyz";
+		}
+		if(key=='0')
+		{
+			return ".;";
 		}
 		return "";
 	}
